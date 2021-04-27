@@ -2,13 +2,19 @@
   text-align: center;
 }
 
+.jumbotron.jumbotron-fluid {
+  height: 40vh;
+  background-color: #DABBAB;
+  color: white;
+}
+
 .navbar-expand-md {
   height: 10vh;
   color: azure;
 }
 
 .navbar-nav {
-  background-color: steelblue;
+  background-color: #8FAC7B;
 }
 
 .style {

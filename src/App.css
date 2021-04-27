@@ -2,24 +2,41 @@
   text-align: center;
 }
 
+.height {
+  height: 100vh;
+}
+
 .jumbotron.jumbotron-fluid {
   height: 40vh;
-  background-color: #DABBAB;
-  color: white;
+  color: blueviolet;
+  background-image: url('./assets/photo-1438109382753-8368e7e1e7cf.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.navbar-expand-md {
+.navbar-nav.navbar {
+  background-color: #8FAC7B;
   height: 10vh;
   color: azure;
+  padding: 0px;
 }
 
-.navbar-nav {
-  background-color: #8FAC7B;
+.navbar-nav.navbar .style:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.active {
+  background-color: seagreen;
 }
 
 .style {
   color: whitesmoke;
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
 }
 
 .style:hover {

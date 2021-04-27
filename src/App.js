@@ -17,29 +17,31 @@ function App() {
       </div>
       <nav className="navbar-expand-md">
           <ul className="navbar-nav navbar nav-fill w-100">
-            <NavLink className="style nav-item d-flex justify-content-center align-items-center" to="home">Home</NavLink>
-            <NavLink className="style nav-item d-flex justify-content-center align-items-center" to="blog">Blog</NavLink>
-            <NavLink className="style nav-item d-flex justify-content-center align-items-center" to="services">Services</NavLink>
-            <NavLink className="style nav-item d-flex justify-content-center align-items-center" to="login">Login</NavLink>
+            <NavLink activeClassName="active" className="style nav-item d-flex justify-content-center align-items-center" to="home">Home</NavLink>
+            <NavLink activeClassName="active" className="style nav-item d-flex justify-content-center align-items-center" to="blog">Blog</NavLink>
+            <NavLink activeClassName="active" className="style nav-item d-flex justify-content-center align-items-center" to="services">Services</NavLink>
+            <NavLink activeClassName="active" className="style nav-item d-flex justify-content-center align-items-center" to="login">Login</NavLink>
           </ul>
         </nav>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route path="/services">
-            <Services />
-          </Route>
-        </Switch>
+        <div className="container height d-flex align-items-center justify-content-center">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/blog">
+              <Blog />
+            </Route>
+            <Route path="/services">
+              <Services />
+            </Route>
+          </Switch>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>

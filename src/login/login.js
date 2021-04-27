@@ -13,7 +13,7 @@ export const Login = () => {
                 <input type="checkbox" className="form-check-input" />
                 <label className="form-check-label">Remember Me</label>
             </div>
-            <button type="button" className="btn btn-success">Login</button>
+            <button type="button" className="btn btn-success col-md-3">Login</button>
         </form>
     );
 };

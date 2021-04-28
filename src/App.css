@@ -2,13 +2,9 @@
   text-align: center;
 }
 
-.height {
-  height: 100vh;
-}
-
 .jumbotron.jumbotron-fluid {
   height: 40vh;
-  color: blueviolet;
+  color: #2A374E;
   background-image: url('./assets/photo-1438109382753-8368e7e1e7cf.jpeg');
   background-repeat: no-repeat;
   background-size: cover;

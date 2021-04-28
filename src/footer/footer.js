@@ -21,7 +21,7 @@ export const Footer = () => {
                         <div className="col-md-5 col-12">
                             <div className="form-outline form-white form-mb-4">
                                 <input type="email" id="form5Example2" className="form-control" />
-                                <label className="form-label" for="form5Example2">Email address</label>
+                                <label className="form-label" htmlFor="form5Example2">Email address</label>
                             </div>
                         </div>
                         <div className="col-auto">

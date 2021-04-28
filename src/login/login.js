@@ -1,3 +1,5 @@
+import './login.css'
+
 export const Login = () => {
     return (
         <form className="container d-flex flex-column justify-content-center align-items-center">

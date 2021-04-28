@@ -1,26 +1,14 @@
 import './App.css';
 import React from 'react'
 import { NavLink, Route, BrowserRouter, Switch } from 'react-router-dom';
-import axios from 'axios'
 
 import { Home } from './homepage/home'
 import { Login } from './login/login'
-import { Blog } from './blog/blog'
-import { Services } from './service/service'
+import Blog from './blog/blog'
+import Services from './service/service'
 import { Footer } from './footer/footer'
 
 class App extends React.Component {
-  state = {
-    posts: []
-}
-componentDidMount() {
-    const URL = 'https://jsonplaceholder.typicode.com/'
-    axios.get(URL + 'posts').then(res => res.data).then(data => {
-        this.setState({posts: data});
-        console.log(this.state.posts)
-    });
-  }
-
   render() {
     return (
       <div className="App">
@@ -49,7 +37,7 @@ componentDidMount() {
                 <Login />
               </Route>
               <Route path="/blog">
-                <Blog posts={this.state.posts} />
+                <Blog />
               </Route>
               <Route path="/services">
                 <Services />
@@ -62,5 +50,6 @@ componentDidMount() {
     );
   }
 }
+
 
 export default App;
